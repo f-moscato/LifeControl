@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="LC.ico" />
+    <title>Live Control</title>
+    <!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/style.css" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          <a class="navbar-brand" <a href="Home.html"> <img src="immagini/lclogo.png"  height="50" width="150" alt="Brand" ></a></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Home.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li><a href="logout.php">LOGOUT</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENÚ<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li> <a href="sensori.php">Sensori</a></li>
+				   <li role="separator" class="divider"></li>
+				 <li> <a href="utenti.php">Utenti</a></li>
+				  <li role="separator" class="divider"></li>
+				 <li> <a href="ambienti.php">Impianti</a></li>
+				  <li role="separator" class="divider"></li>
+				 <li> <a href="siti.php">Siti</a></li>
+				  <li role="separator" class="divider"></li>
+				 <li> <a href="marche.php">Marche</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+  <div class="container">
+
+<a href='sensori.php'><img src='immagini/indietro.jpg' height='30' width='25'>				</a>
+
+ <form method="post" action="sensori.php">
+ <input type="radio" name="ciao" value="html" /> ciao
+ <td align="right"><input type="submit"
+          name="submit" value="Sent"></td>
+</form>
+<form action="">
+ <input type="radio" name="linguaggio" value="html"  />mio
+</form>
+<table border="0">
+  <tr>
+    <td align="center" ><strong>Inserisci i dati richiesti</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+	  <form method="post" action="agg_sens.php">
+        <tr>
+          <td>ID Sensore</td>
+          <td><input type="text" name="id" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td>Tipo</td>
+          <td><input type="text" name="tipo" size="40">
+          </td>
+        </tr>
+		<tr>
+          <td>Sito</td>
+          <td><input type="text" name="sito" size="40">
+          </td>
+        </tr>
+		 <tr>
+          <td>Marca</td>
+		  <td>
+		<input type="text" name="sito" size="40">
+          </td>
+        </tr>
+		<tr>
+		<td></td>
+          <td align="left"><input type="reset"
+          name="cancella" value="cancella"></td>
+          <td></td>
+          <td align="right"><input type="submit"
+          name="submit" value="Sent"></td>
+
+        </tr>
+        </form>
+        </table>
+      </td>
+    </tr>
+</table>
+
+
+
+
+</div>
+
+</body>
+</html>
